@@ -17,17 +17,15 @@ server {
         listen [::]:80;
 
         root /var/www/$domain/html;
-        index index.php index.html index.htm;
+        index index.php;
 
         server_name $domain www.$domain;
 		include hhvm.conf;
 
         location / {
-                try_files $uri $uri/ /index.php?q=$request_uri;
+                try_files \$uri \$uri/ /index.php?q=\$request_uri;
         }
 }
-
-
 EOF
 
 # Link to make it available
