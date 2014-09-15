@@ -14,6 +14,12 @@ Automates an otherwise tedious Nginx server block set up for a WordPress site.
 
 ## Usage
 
+Make sure to make script executable by running the following command (may require sudo).
+
+`chmod +x ./nginx-wp.sh`
+
+Do this once, then run the following command each time you want to create a server block.
+
 `./nginx-wp.sh example.com`
 
 ## Assumptions
