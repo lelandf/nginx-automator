@@ -26,4 +26,4 @@ Do this once, then run the following command each time you want to create a serv
 
 - Your nginx server blocks are going to be set up in the /var/www/ directories.
 - You use WordPress, or maybe some other PHP application.
-- You use hhvm (hence the hhvm.conf include).
+- You use hhvm (hence the hhvm.conf include in -hhvm.sh) or PHP5-FPM.
